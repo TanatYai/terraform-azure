@@ -2,7 +2,7 @@ terraform {
     required_providers {
         azurerm = {
             source  = "hashicorp/azurerm"
-            version = "~>3.2"
+            version = "=3.0.0"
         }
     }
 }
@@ -22,7 +22,7 @@ variable "resource-group" {
 }
 
 variable "location" {
-    default = "East asia"
+    default = "Southeast asia"
 }
 
 resource "azurerm_virtual_network" "vnet" {
@@ -124,7 +124,7 @@ resource "azurerm_network_security_group" "nsg" {
     resource_group_name = var.resource-group
 
     security_rule {
-        name                       = "nsg-rule-dev"
+        name                       = "sr-tan-dev"
         priority                   = 100
         direction                  = "Inbound"
         access                     = "Allow"
