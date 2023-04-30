@@ -18,11 +18,11 @@ provider "azurerm" {
 # }
 
 variable "resource-group" {
-    default = "rg-tanat-dev"
+    default = "rg-github-dev"
 }
 
 variable "location" {
-    default = "Southeast asia"
+    default = "Japan east"
 }
 
 resource "azurerm_virtual_network" "vnet" {
