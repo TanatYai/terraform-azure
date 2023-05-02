@@ -22,7 +22,7 @@ variable "resource-group" {
 }
 
 variable "location" {
-    default = "Japan east"
+    default = "East us"
 }
 
 resource "azurerm_virtual_network" "vnet" {
